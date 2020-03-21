@@ -1,7 +1,7 @@
 {
   "name": "s3-image-exif",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "get AWS.S3 image's exif or capture date info",
   "main": "src/Plugin.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,6 +12,18 @@
     "exif",
     "capture date"
   ],
-  "author": "Jason",
-  "license": "ISC"
+  "author": {
+    "name": "Jason",
+    "email": "845830229@qq.com",
+    "url": "https://github.com/phpstudyone/s3-image-exif"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/phpstudyone/s3-image-exif"
+  },
+  "homepage": "https://github.com/phpstudyone/s3-image-exif",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.643.0"
+  }
 }
