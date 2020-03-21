@@ -1,0 +1,17 @@
+{
+  "name": "s3-image-exif",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/Plugin.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "aws-sdk",
+    "s3",
+    "exif",
+    "capture date"
+  ],
+  "author": "Jason",
+  "license": "ISC"
+}
