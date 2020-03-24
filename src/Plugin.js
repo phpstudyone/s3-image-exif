@@ -32,7 +32,7 @@ const exif = async (path)=> {
  */
 const dateFormat = (fromDateStr) => {
     const fromDateStrInt = parseInt(fromDateStr.replace(/[: ]/g, ''));
-    const toDateStr = `${fromDateStrInt}`.replace(/(.{4})(.{2})(.{2})(.{2})(.{2})/, "$1-$2-$3 $3:$4:");
+    const toDateStr = `${fromDateStrInt}`.replace(/(.{4})(.{2})(.{2})(.{2})(.{2})(.{2})/, "$1-$2-$3 $4:$5:$6");
     return toDateStr;
 }
 
@@ -48,7 +48,7 @@ const getCaptureDate = (exifInfo) => {
     let dateStringArr = [...exifInfo.matchAll(/(\d{4}:\d{2}:\d{2} \d{2}:\d{2}:\d{2})/g)];
     const dateIntArr = dateStringArr.map((v) => parseInt(v[0].replace(/[: ]/g, '')));
     const dateInt = dateIntArr.sort((a, b) => a - b)[0];
-    return `${dateInt}`.replace(/(.{4})(.{2})(.{2})(.{2})(.{2})/, "$1-$2-$3 $3:$4:");
+    return `${dateInt}`.replace(/(.{4})(.{2})(.{2})(.{2})(.{2})(.{2})/, "$1-$2-$3 $4:$5:$6");
 }
 
 /**
