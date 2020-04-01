@@ -40,7 +40,7 @@ const dateFormat = (fromDateStr) => {
  * get image's capture date from image exif info.
  * @param {String} exifInfo  image exif info
  */
-const getCaptureDate = (exifInfo) => {
+const getCaptureDate = (exifInfo) => 
     const originalDate = exifInfo.match(/Date\/Time Original[ \t]+: (\d{4}:\d{2}:\d{2} \d{2}:\d{2}:\d{2})/);
     if (originalDate) {
         return dateFormat(originalDate[1])
